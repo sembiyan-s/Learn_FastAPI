@@ -6,7 +6,7 @@ app=FastAPI()
 
 @app.get("/users/{user_id}")
 async def get_user(user_id: int):
-    return {"user_id": user_id, "message": f"Fetching user with ID {user_id}"}
+    return {"user_id": user_id, "message": f"Fetching user with ID {user_id} with thier name !"}
 
 @app.get("/items/")
 async def read_items(skip: int = 0, limit: int = 10):
